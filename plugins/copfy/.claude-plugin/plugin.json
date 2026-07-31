@@ -1,7 +1,7 @@
 {
   "name": "copfy",
-  "version": "0.1.0",
-  "description": "Soluções Copfy: /copfy conectar, /copfy solucao <slug>, /copfy continuar, /copfy status",
+  "version": "0.2.0",
+  "description": "Soluções Copfy no terminal: /copfy:conectar, /copfy:solucao, /copfy:continuar, /copfy:status",
   "author": {
     "name": "Copfy",
     "email": "lucas@copfy.com.br",

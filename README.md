@@ -12,7 +12,11 @@ Dentro do Claude Code:
 ```
 /plugin marketplace add copfybr/copfy-plugin
 /plugin install copfy@copfy-plugin
+/reload-plugins
 ```
+
+O `/reload-plugins` ativa o plugin na conversa que já está aberta. Sem ele,
+os comandos só aparecem quando você abrir o Claude Code de novo.
 
 ## Uso
 
@@ -21,11 +25,15 @@ Dentro do Claude Code:
 2. No terminal:
 
 ```
-/copfy conectar COPFY-XXXXX
-/copfy solucao atendimento-whatsapp
+/copfy:conectar COPFY-XXXXXXXX
+/copfy:solucao atendimento-whatsapp
 ```
 
-3. Parou no meio? `/copfy continuar` retoma de onde você estava.
+3. Parou no meio? `/copfy:continuar` retoma de onde você estava, e
+   `/copfy:status` mostra o que já foi feito.
+
+Os comandos levam o prefixo `copfy:` porque o Claude Code sempre nomeia
+comandos de plugin assim, pra dois plugins nunca brigarem pelo mesmo nome.
 
 O conteúdo das soluções é entregue pela plataforma da Copfy e exige uma conta
 com acesso à área de Soluções. Este repositório contém apenas o plugin.
