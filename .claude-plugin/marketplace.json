@@ -1,0 +1,14 @@
+{
+  "name": "copfy-plugin",
+  "owner": {
+    "name": "Copfy",
+    "email": "lucas@copfy.com.br"
+  },
+  "plugins": [
+    {
+      "name": "copfy",
+      "source": "./plugins/copfy",
+      "description": "Soluções Copfy no seu terminal: conecte sua conta e implemente sistemas de IA passo a passo com o Claude Code."
+    }
+  ]
+}
