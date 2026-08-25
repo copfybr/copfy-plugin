@@ -1,7 +1,7 @@
 {
   "name": "copfy",
-  "version": "0.5.0",
-  "description": "150 comandos gratuitos para criar e editar imagens, além dos workflows das Soluções Copfy.",
+  "version": "0.6.0",
+  "description": "151 comandos gratuitos para criar e editar imagens, além dos workflows das Soluções Copfy.",
   "author": {
     "name": "Copfy",
     "email": "lucas@copfy.com.br",
@@ -13,8 +13,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Copfy",
-    "shortDescription": "150 comandos gratuitos para criar imagens.",
-    "longDescription": "Anexe um produto para receber três recomendações com exemplos ou transforme referências em raios X, blueprints, Meta Ads, outdoors 3D, fotos de produto e outros estilos. Os 150 comandos de imagem são gratuitos.",
+    "shortDescription": "151 comandos gratuitos para criar imagens.",
+    "longDescription": "Anexe um produto para receber três recomendações com exemplos ou transforme referências em raios X, blueprints, Meta Ads, Sell Ads, outdoors 3D e outros estilos. Os 151 comandos de imagem são gratuitos.",
     "developerName": "Copfy",
     "category": "Creativity",
     "capabilities": ["Image generation", "Image editing", "Prompt workflows"],

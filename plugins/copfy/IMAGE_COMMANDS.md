@@ -1,6 +1,6 @@
 # Comandos gratuitos de imagem
 
-150 comandos únicos disponíveis como skills do plugin Copfy.
+151 comandos únicos disponíveis como skills do plugin Copfy.
 
 As descrições foram reescritas para uso operacional. O conjunto inicial foi baseado no material de referência Scale With PB enviado para esta implementação.
 
@@ -75,6 +75,7 @@ As descrições foram reescritas para uso operacional. O conjunto inicial foi ba
 | `/billboard` | Exiba o tema em um grande outdoor urbano noturno e fotorealista. | [ver imagem](assets/examples/billboard.jpg) |
 | `/3dbillboard` | Crie um outdoor digital anamórfico 3D, fazendo o produto ultrapassar visualmente os limites da tela com perspectiva plausível. | [ver imagem](assets/examples/3dbillboard.jpg) · [outra referência](assets/examples/variants/3dbillboard-can.jpg) |
 | `/metaads` | Monte um criativo de performance para anúncios no Instagram e Facebook, com produto protagonista, hierarquia mobile e chamada para ação. | [ver imagem](assets/examples/metaads.jpg) · [outra referência](assets/examples/variants/metaads-sneaker.jpg) |
+| `/sellads` | Crie um anúncio de venda direta com benefício central, argumento persuasivo e CTA forte, sem inventar oferta, prova ou urgência. | [ver imagem](assets/examples/sellads.jpg) |
 | `/unboxing` | Mostre o momento de abertura da embalagem com papel, fita e acessórios. | [ver imagem](assets/examples/unboxing.jpg) |
 | `/floating` | Faça o produto levitar com sombras suaves e profundidade realista. | [ver imagem](assets/examples/floating.jpg) |
 | `/splash` | Envolva o produto em um respingo de líquido congelado no tempo. | [ver imagem](assets/examples/splash.jpg) |

@@ -5,7 +5,7 @@ description: Escolha e aplique os comandos gratuitos de imagem da Copfy. Use qua
 
 # Comandos de imagem Copfy
 
-Ajude o usuário a escolher entre os 150 comandos gratuitos do plugin e gere ou edite a imagem com a ferramenta nativa disponível. Este catálogo é grátis e não exige autenticação Copfy.
+Ajude o usuário a escolher entre os 151 comandos gratuitos do plugin e gere ou edite a imagem com a ferramenta nativa disponível. Este catálogo é grátis e não exige autenticação Copfy.
 
 Quando o pedido já trouxer um comando específico, use a skill desse comando. Quando o usuário pedir sugestões ou simplesmente anexar um produto sem escolher efeito, consulte [o catálogo](../../IMAGE_COMMANDS.md) e [a galeria](../../EXAMPLES.md) e recomende automaticamente as três opções mais adequadas.
 
@@ -20,7 +20,7 @@ Primeiro identifique o tipo de produto, material, forma, ângulo disponível, pr
 
 Descarte combinações arbitrárias. Em especial, não recomende engrenagens ou interiores mecânicos para alimentos, calçados e embalagens sem mecanismo, salvo se o usuário pedir uma interpretação surreal. Reserve `/innerworkings` para relógios, máquinas e produtos com mecanismo plausível; use `/layered`, `/exploded`, `/cutaway` ou `/schematic` para construção de calçados e objetos sem motor.
 
-Não confunda `/billboard` com `/3dbillboard`: o primeiro cria um outdoor plano; o segundo exige tela de esquina ou curva, ponto de vista definido, profundidade anamórfica e elementos ultrapassando visualmente a borda. Use `/metaads` quando o objetivo for um criativo de feed para Instagram ou Facebook com hierarquia mobile e CTA, não quando o usuário quiser apenas uma fotografia de produto.
+Não confunda `/billboard` com `/3dbillboard`: o primeiro cria um outdoor plano; o segundo exige tela de esquina ou curva, ponto de vista definido, profundidade anamórfica e elementos ultrapassando visualmente a borda. Use `/metaads` para uma peça de campanha equilibrada entre marca e performance. Use `/sellads` quando o objetivo principal for venda direta, com benefício, argumento e CTA mais fortes. Nenhum dos dois deve inventar oferta, prova ou urgência.
 
 Apresente cada recomendação neste formato, antes de gerar:
 
@@ -34,12 +34,12 @@ Renderize a prévia com `https://raw.githubusercontent.com/copfybr/copfy-plugin/
 Atalhos úteis de seleção:
 
 - alimentos: `/productshot`, `/macro`, `/topdown`, `/crosssection`, `/stepbystep`;
-- bebidas e embalagens: `/packshot`, `/heroshot`, `/splash`, `/floating`, `/metaads`;
-- moda e calçados: `/lifestyle`, `/layered`, `/exploded`, `/metaads`, `/3dbillboard`;
+- bebidas e embalagens: `/packshot`, `/heroshot`, `/splash`, `/metaads`, `/sellads`;
+- moda e calçados: `/lifestyle`, `/layered`, `/exploded`, `/sellads`, `/3dbillboard`;
 - relógios, máquinas e eletrônicos: `/innerworkings`, `/cutaway`, `/explodedview`, `/schematic`, `/diagnostic`;
 - mascotes e personagens: `/toyfigure`, `/claymation`, `/diorama`, `/parallelversions`, `/xray` conceitual;
 - joias e produtos premium: `/macro`, `/studio`, `/productshot`, `/turntable`, `/restoration`.
-- mídia externa de impacto: `/3dbillboard`; campanhas sociais de conversão: `/metaads`.
+- mídia externa de impacto: `/3dbillboard`; campanhas sociais: `/metaads`; venda direta e CTA mais agressivo: `/sellads`.
 
 Ao receber uma imagem:
 

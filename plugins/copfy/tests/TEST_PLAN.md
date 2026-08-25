@@ -2,7 +2,7 @@
 
 ## Escopo
 
-- 150 comandos únicos.
+- 151 comandos únicos.
 - Uma geração inicial por comando.
 - Uma referência preferida por comando, definida em `IMAGE_TEST_MATRIX.md`.
 - Uma nova geração quando o resultado não atingir os critérios mínimos.
@@ -32,7 +32,7 @@ As imagens abaixo são fixtures de QA e não devem ser publicadas dentro do plug
 
 ## Estimativa operacional
 
-- Geração inicial das 150 imagens: aproximadamente 6 a 10 horas.
+- Geração inicial das 151 imagens: aproximadamente 6 a 10 horas.
 - Revisão visual e registro dos resultados: aproximadamente 2 a 3 horas.
 - Reexecução esperada de 15% a 25% dos casos: aproximadamente 1 a 3 horas.
 - Total para a bateria completa: aproximadamente 9 a 15 horas.

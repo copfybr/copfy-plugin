@@ -60,6 +60,7 @@ As imagens de referência não fazem parte do plugin público.
 | `/billboard` | Lata Red Bull Zero | Produto e estúdio |
 | `/3dbillboard` | Tênis Nike roxo e branco | Produto e estúdio |
 | `/metaads` | Lata Red Bull Zero | Produto e estúdio |
+| `/sellads` | Tênis Nike roxo e branco | Produto e estúdio |
 | `/unboxing` | Tênis Nike roxo e branco | Produto e estúdio |
 | `/floating` | Lata Red Bull Zero | Produto e estúdio |
 | `/splash` | Lata Red Bull Zero | Produto e estúdio |
