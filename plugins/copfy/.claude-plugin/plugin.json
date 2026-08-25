@@ -1,7 +1,7 @@
 {
   "name": "copfy",
-  "version": "0.3.0",
-  "description": "Soluções Copfy no terminal: /copfy:conectar, /copfy:solucoes, /copfy:solucao, /copfy:continuar, /copfy:status",
+  "version": "0.4.0",
+  "description": "148 comandos gratuitos de imagem e Soluções Copfy: /copfy:xray, /copfy:blueprint, /copfy:productshot e muito mais.",
   "author": {
     "name": "Copfy",
     "email": "lucas@copfy.com.br",

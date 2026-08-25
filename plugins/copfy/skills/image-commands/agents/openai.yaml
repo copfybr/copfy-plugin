@@ -1,0 +1,7 @@
+interface:
+  display_name: "Comandos de imagem Copfy"
+  short_description: "Recomenda o melhor efeito para seu produto"
+  default_prompt: "Use $image-commands para analisar meu produto e mostrar os três melhores efeitos com exemplos."
+
+policy:
+  allow_implicit_invocation: true

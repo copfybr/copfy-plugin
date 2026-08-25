@@ -1,43 +1,70 @@
-# Copfy · plugin do Claude Code
+# Copfy · plugin de IA
 
-Plugin oficial das **Soluções Copfy**: sistemas de IA (atendimento no
-WhatsApp, notas fiscais automáticas, criativos de anúncio e outros) que você
-implementa no seu próprio computador, passo a passo, com o Claude Code
-executando junto.
+Plugin oficial da Copfy com dois conjuntos de recursos:
 
-## Instalação
+- **148 comandos gratuitos de imagem**, sem conta Copfy: raio X, blueprint, fotografia de produto, câmera, miniaturas, diagramas, ficção científica, arquivos investigativos e protótipos.
+- **Soluções Copfy**, que conectam sua conta e implementam sistemas de IA passo a passo.
 
-Dentro do Claude Code:
+O pacote possui manifests para Claude Code e Codex. A mesma pasta `skills/` pode ser submetida como plugin para ChatGPT, Work e Codex.
 
-```
+## Instalação no Claude Code
+
+```text
 /plugin marketplace add copfybr/copfy-plugin
 /plugin install copfy@copfy-plugin
 /reload-plugins
 ```
 
-O `/reload-plugins` ativa o plugin na conversa que já está aberta. Sem ele,
-os comandos só aparecem quando você abrir o Claude Code de novo.
+## Comandos gratuitos de imagem
 
-## Uso
+Anexe uma imagem e invoque uma skill do plugin. No Claude Code, por exemplo:
 
-1. Acesse uma solução em [app.copfy.com.br/solucoes](https://app.copfy.com.br/solucoes)
-   e gere seu código de pareamento no painel "Implementar agora".
-2. No terminal:
-
+```text
+/copfy:xray
+/copfy:blueprint
+/copfy:productshot
+/copfy:diorama
+/copfy:thermal
 ```
+
+Também é possível acrescentar o assunto ou combinar dois efeitos:
+
+```text
+/copfy:xray meu tênis
+/copfy:productshot esta lata, fundo escuro
+/copfy:blueprint + /copfy:neon esta máquina
+```
+
+Veja a [lista completa](plugins/copfy/IMAGE_COMMANDS.md) ou navegue pela [galeria com 148 exemplos](plugins/copfy/EXAMPLES.md).
+
+Se a pessoa apenas anexar o produto, sem escolher um comando, a skill `image-commands` analisa formato, material, categoria e potencial visual, mostra os três efeitos mais adequados com suas imagens de exemplo e espera a escolha antes de gerar. Combinações incompatíveis — como engrenagens dentro de um calçado sem mecanismo — são descartadas pelo roteador.
+
+Todos os 148 comandos possuem descrição operacional própria e uma imagem de exemplo pública. Esse catálogo pertence ao **free tier** e não pede login nem código de pareamento.
+
+## Soluções Copfy
+
+1. Acesse uma solução em [app.copfy.com.br/solucoes](https://app.copfy.com.br/solucoes) e gere o código de pareamento em **Implementar agora**.
+2. No Claude Code:
+
+```text
 /copfy:conectar COPFY-XXXXXXXX
 /copfy:solucao atendimento-whatsapp
 ```
 
-3. Parou no meio? `/copfy:continuar` retoma de onde você estava, e
-   `/copfy:status` mostra o que já foi feito.
+Use `/copfy:continuar` para retomar uma implementação e `/copfy:status` para acompanhar o progresso.
 
-Os comandos levam o prefixo `copfy:` porque o Claude Code sempre nomeia
-comandos de plugin assim, pra dois plugins nunca brigarem pelo mesmo nome.
+O conteúdo completo das soluções é entregue pela plataforma da Copfy e exige uma conta com acesso. Os comandos de imagem deste repositório são gratuitos e não exigem autenticação.
 
-O conteúdo das soluções é entregue pela plataforma da Copfy e exige uma conta
-com acesso à área de Soluções. Este repositório contém apenas o plugin.
+## Desenvolvimento
+
+As skills de imagem são geradas a partir do catálogo mantido em `plugins/copfy/scripts/generate_image_skills.py`:
+
+```text
+python plugins/copfy/scripts/generate_image_skills.py
+```
+
+A matriz de QA escolhe uma das referências de produto ou mascote para cada comando e fica em `plugins/copfy/tests/IMAGE_TEST_MATRIX.md`. As imagens usadas nos testes não são distribuídas no plugin.
 
 ## Suporte
 
-Fale com o Copi no WhatsApp da Copfy, ou escreva pra lucas@copfy.com.br.
+Fale com o Copi no WhatsApp da Copfy ou escreva para lucas@copfy.com.br.

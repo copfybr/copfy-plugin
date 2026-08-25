@@ -1,0 +1,29 @@
+{
+  "name": "copfy",
+  "version": "0.4.0",
+  "description": "148 comandos gratuitos para criar e editar imagens, além dos workflows das Soluções Copfy.",
+  "author": {
+    "name": "Copfy",
+    "email": "lucas@copfy.com.br",
+    "url": "https://app.copfy.com.br"
+  },
+  "homepage": "https://app.copfy.com.br/solucoes",
+  "repository": "https://github.com/copfybr/copfy-plugin",
+  "keywords": ["copfy", "imagem", "design", "marketing", "skills"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Copfy",
+    "shortDescription": "148 comandos gratuitos para criar imagens.",
+    "longDescription": "Anexe um produto para receber três recomendações com exemplos ou transforme referências em raios X, blueprints, fotos de produto, miniaturas, diagramas e outros estilos. Os 148 comandos de imagem são gratuitos.",
+    "developerName": "Copfy",
+    "category": "Creativity",
+    "capabilities": ["Image generation", "Image editing", "Prompt workflows"],
+    "websiteURL": "https://app.copfy.com.br/solucoes",
+    "defaultPrompt": [
+      "Analise meu produto e mostre os 3 melhores efeitos.",
+      "Aplique /xray nesta imagem.",
+      "Crie um /productshot deste produto."
+    ],
+    "brandColor": "#2563EB"
+  }
+}
