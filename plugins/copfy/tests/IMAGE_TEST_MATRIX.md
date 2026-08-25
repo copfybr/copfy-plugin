@@ -58,6 +58,8 @@ As imagens de referência não fazem parte do plugin público.
 | `/lifestyle` | Tênis Nike roxo e branco | Produto e estúdio |
 | `/mockup` | Lata Red Bull Zero | Produto e estúdio |
 | `/billboard` | Lata Red Bull Zero | Produto e estúdio |
+| `/3dbillboard` | Tênis Nike roxo e branco | Produto e estúdio |
+| `/metaads` | Lata Red Bull Zero | Produto e estúdio |
 | `/unboxing` | Tênis Nike roxo e branco | Produto e estúdio |
 | `/floating` | Lata Red Bull Zero | Produto e estúdio |
 | `/splash` | Lata Red Bull Zero | Produto e estúdio |

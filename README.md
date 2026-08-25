@@ -2,7 +2,7 @@
 
 Plugin oficial da Copfy com dois conjuntos de recursos:
 
-- **148 comandos gratuitos de imagem**, sem conta Copfy: raio X, blueprint, fotografia de produto, câmera, miniaturas, diagramas, ficção científica, arquivos investigativos e protótipos.
+- **150 comandos gratuitos de imagem**, sem conta Copfy: raio X, blueprint, Meta Ads, outdoor anamórfico 3D, fotografia de produto, câmera, miniaturas, diagramas e protótipos.
 - **Soluções Copfy**, que conectam sua conta e implementam sistemas de IA passo a passo.
 
 O pacote possui manifests para Claude Code e Codex. A mesma pasta `skills/` pode ser submetida como plugin para ChatGPT, Work e Codex.
@@ -25,6 +25,8 @@ Anexe uma imagem e invoque uma skill do plugin. No Claude Code, por exemplo:
 /copfy:productshot
 /copfy:diorama
 /copfy:thermal
+/copfy:3dbillboard
+/copfy:metaads
 ```
 
 Também é possível acrescentar o assunto ou combinar dois efeitos:
@@ -35,11 +37,11 @@ Também é possível acrescentar o assunto ou combinar dois efeitos:
 /copfy:blueprint + /copfy:neon esta máquina
 ```
 
-Veja a [lista completa](plugins/copfy/IMAGE_COMMANDS.md) ou navegue pela [galeria com 148 exemplos](plugins/copfy/EXAMPLES.md).
+Veja a [lista completa](plugins/copfy/IMAGE_COMMANDS.md) ou navegue pela [galeria com 150 exemplos](plugins/copfy/EXAMPLES.md).
 
 Se a pessoa apenas anexar o produto, sem escolher um comando, a skill `image-commands` analisa formato, material, categoria e potencial visual, mostra os três efeitos mais adequados com suas imagens de exemplo e espera a escolha antes de gerar. Combinações incompatíveis — como engrenagens dentro de um calçado sem mecanismo — são descartadas pelo roteador.
 
-Todos os 148 comandos possuem descrição operacional própria e uma imagem de exemplo pública. Esse catálogo pertence ao **free tier** e não pede login nem código de pareamento.
+Todos os 150 comandos possuem descrição operacional própria e pelo menos uma imagem de exemplo pública. `/3dbillboard` e `/metaads` incluem demonstrações com tênis e lata. Esse catálogo pertence ao **free tier** e não pede login nem código de pareamento.
 
 ## Soluções Copfy
 

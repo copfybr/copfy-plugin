@@ -1,6 +1,6 @@
 # Galeria dos comandos de imagem
 
-Uma prévia gerada para cada um dos 148 comandos gratuitos.
+Uma prévia gerada para cada um dos 150 comandos gratuitos.
 Clique numa imagem para abrir o arquivo em tamanho maior.
 
 ## Ver por dentro
@@ -39,9 +39,10 @@ Clique numa imagem para abrir o arquivo em tamanho maior.
 | --- | --- | --- |
 | <a href="assets/examples/productshot.jpg"><img src="assets/examples/productshot.jpg" width="220" alt="Exemplo /productshot"></a><br><code>/productshot</code> | <a href="assets/examples/packshot.jpg"><img src="assets/examples/packshot.jpg" width="220" alt="Exemplo /packshot"></a><br><code>/packshot</code> | <a href="assets/examples/heroshot.jpg"><img src="assets/examples/heroshot.jpg" width="220" alt="Exemplo /heroshot"></a><br><code>/heroshot</code> |
 | <a href="assets/examples/flatlay.jpg"><img src="assets/examples/flatlay.jpg" width="220" alt="Exemplo /flatlay"></a><br><code>/flatlay</code> | <a href="assets/examples/knolling.jpg"><img src="assets/examples/knolling.jpg" width="220" alt="Exemplo /knolling"></a><br><code>/knolling</code> | <a href="assets/examples/lifestyle.jpg"><img src="assets/examples/lifestyle.jpg" width="220" alt="Exemplo /lifestyle"></a><br><code>/lifestyle</code> |
-| <a href="assets/examples/mockup.jpg"><img src="assets/examples/mockup.jpg" width="220" alt="Exemplo /mockup"></a><br><code>/mockup</code> | <a href="assets/examples/billboard.jpg"><img src="assets/examples/billboard.jpg" width="220" alt="Exemplo /billboard"></a><br><code>/billboard</code> | <a href="assets/examples/unboxing.jpg"><img src="assets/examples/unboxing.jpg" width="220" alt="Exemplo /unboxing"></a><br><code>/unboxing</code> |
-| <a href="assets/examples/floating.jpg"><img src="assets/examples/floating.jpg" width="220" alt="Exemplo /floating"></a><br><code>/floating</code> | <a href="assets/examples/splash.jpg"><img src="assets/examples/splash.jpg" width="220" alt="Exemplo /splash"></a><br><code>/splash</code> | <a href="assets/examples/adcreative.jpg"><img src="assets/examples/adcreative.jpg" width="220" alt="Exemplo /adcreative"></a><br><code>/adcreative</code> |
-| <a href="assets/examples/shelf.jpg"><img src="assets/examples/shelf.jpg" width="220" alt="Exemplo /shelf"></a><br><code>/shelf</code> | <a href="assets/examples/catalog.jpg"><img src="assets/examples/catalog.jpg" width="220" alt="Exemplo /catalog"></a><br><code>/catalog</code> | <a href="assets/examples/studio.jpg"><img src="assets/examples/studio.jpg" width="220" alt="Exemplo /studio"></a><br><code>/studio</code> |
+| <a href="assets/examples/mockup.jpg"><img src="assets/examples/mockup.jpg" width="220" alt="Exemplo /mockup"></a><br><code>/mockup</code> | <a href="assets/examples/billboard.jpg"><img src="assets/examples/billboard.jpg" width="220" alt="Exemplo /billboard"></a><br><code>/billboard</code> | <a href="assets/examples/3dbillboard.jpg"><img src="assets/examples/3dbillboard.jpg" width="220" alt="Exemplo /3dbillboard"></a><br><code>/3dbillboard</code><br><a href="assets/examples/variants/3dbillboard-can.jpg">outra referência</a> |
+| <a href="assets/examples/metaads.jpg"><img src="assets/examples/metaads.jpg" width="220" alt="Exemplo /metaads"></a><br><code>/metaads</code><br><a href="assets/examples/variants/metaads-sneaker.jpg">outra referência</a> | <a href="assets/examples/unboxing.jpg"><img src="assets/examples/unboxing.jpg" width="220" alt="Exemplo /unboxing"></a><br><code>/unboxing</code> | <a href="assets/examples/floating.jpg"><img src="assets/examples/floating.jpg" width="220" alt="Exemplo /floating"></a><br><code>/floating</code> |
+| <a href="assets/examples/splash.jpg"><img src="assets/examples/splash.jpg" width="220" alt="Exemplo /splash"></a><br><code>/splash</code> | <a href="assets/examples/adcreative.jpg"><img src="assets/examples/adcreative.jpg" width="220" alt="Exemplo /adcreative"></a><br><code>/adcreative</code> | <a href="assets/examples/shelf.jpg"><img src="assets/examples/shelf.jpg" width="220" alt="Exemplo /shelf"></a><br><code>/shelf</code> |
+| <a href="assets/examples/catalog.jpg"><img src="assets/examples/catalog.jpg" width="220" alt="Exemplo /catalog"></a><br><code>/catalog</code> | <a href="assets/examples/studio.jpg"><img src="assets/examples/studio.jpg" width="220" alt="Exemplo /studio"></a><br><code>/studio</code> |  |
 
 ## Mundos em miniatura
 

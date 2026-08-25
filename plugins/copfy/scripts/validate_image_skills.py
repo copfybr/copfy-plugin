@@ -59,7 +59,9 @@ def main() -> None:
     if extra:
         errors.append(f"Skills geradas fora do catálogo: {', '.join(extra)}")
     if len(set(descriptions.values())) != len(expected):
-        errors.append("As 148 skills devem ter descrições próprias e não duplicadas.")
+        errors.append(
+            f"As {len(expected)} skills devem ter descrições próprias e não duplicadas."
+        )
 
     for relative_path, label in (
         ("IMAGE_COMMANDS.md", "catálogo"),
@@ -73,7 +75,9 @@ def main() -> None:
     gallery = (PLUGIN_ROOT / "EXAMPLES.md").read_text(encoding="utf-8")
     gallery_names = set(re.findall(r'alt="Exemplo /([a-z0-9-]+)"', gallery))
     if gallery_names != expected:
-        errors.append("A galeria não contém exatamente os 148 comandos esperados.")
+        errors.append(
+            f"A galeria não contém exatamente os {len(expected)} comandos esperados."
+        )
 
     examples_root = PLUGIN_ROOT / "assets" / "examples"
     example_names = {
@@ -88,6 +92,23 @@ def main() -> None:
             errors.append(f"Exemplos ausentes ou inválidos: {', '.join(missing_examples)}")
         if extra_examples:
             errors.append(f"Exemplos fora do catálogo: {', '.join(extra_examples)}")
+
+    variants_root = examples_root / "variants"
+    for command, (filename, _) in generator.EXAMPLE_VARIANTS.items():
+        variant_path = variants_root / filename
+        if not variant_path.is_file() or variant_path.stat().st_size < 10_000:
+            errors.append(f"Variação de exemplo ausente ou inválida: {variant_path}")
+            continue
+        if variant_path.read_bytes()[:3] != b"\xff\xd8\xff":
+            errors.append(f"Variação não é JPEG válida: {variant_path}")
+        skill = (PLUGIN_ROOT / "skills" / command / "SKILL.md").read_text(encoding="utf-8")
+        if f"assets/examples/variants/{filename}" not in skill:
+            errors.append(f"Skill /{command} não referencia sua segunda demonstração.")
+
+    for command, guidance in generator.COMMAND_GUIDANCE.items():
+        skill = (PLUGIN_ROOT / "skills" / command / "SKILL.md").read_text(encoding="utf-8")
+        if guidance.strip() not in skill:
+            errors.append(f"Skill /{command} não contém suas regras específicas.")
 
     router = (PLUGIN_ROOT / "skills" / "image-commands" / "SKILL.md").read_text(encoding="utf-8")
     for required in (
