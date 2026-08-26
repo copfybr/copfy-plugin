@@ -1,7 +1,7 @@
 {
   "name": "copfy",
-  "version": "0.6.0",
-  "description": "151 comandos gratuitos para criar e editar imagens, além dos workflows das Soluções Copfy.",
+  "version": "0.7.0",
+  "description": "151 comandos de imagem, skills de carta de vendas e M98, além das Soluções Copfy.",
   "author": {
     "name": "Copfy",
     "email": "lucas@copfy.com.br",
@@ -9,20 +9,22 @@
   },
   "homepage": "https://app.copfy.com.br/solucoes",
   "repository": "https://github.com/copfybr/copfy-plugin",
-  "keywords": ["copfy", "imagem", "design", "marketing", "skills"],
+  "keywords": ["copfy", "imagem", "design", "marketing", "copywriting", "vendas", "skills"],
   "skills": "./skills/",
   "interface": {
     "displayName": "Copfy",
-    "shortDescription": "151 comandos gratuitos para criar imagens.",
-    "longDescription": "Anexe um produto para receber três recomendações com exemplos ou transforme referências em raios X, blueprints, Meta Ads, Sell Ads, outdoors 3D e outros estilos. Os 151 comandos de imagem são gratuitos.",
+    "shortDescription": "Imagens, cartas de vendas e M98.",
+    "longDescription": "Crie e edite imagens com 151 comandos gratuitos, escreva cartas e landing pages de vendas e aplique o método M98 da Copfy. O plugin também conecta as Soluções Copfy.",
     "developerName": "Copfy",
     "category": "Creativity",
-    "capabilities": ["Image generation", "Image editing", "Prompt workflows"],
+    "capabilities": ["Image generation", "Image editing", "Sales copywriting", "Landing pages", "Prompt workflows"],
     "websiteURL": "https://app.copfy.com.br/solucoes",
     "defaultPrompt": [
       "Analise meu produto e mostre os 3 melhores efeitos.",
       "Aplique /xray nesta imagem.",
-      "Crie um /productshot deste produto."
+      "Crie um /productshot deste produto.",
+      "Escreva uma carta de vendas para esta oferta.",
+      "Aplique o método M98 nesta copy."
     ],
     "brandColor": "#2563EB"
   }

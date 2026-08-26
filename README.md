@@ -1,8 +1,9 @@
 # Copfy · plugin de IA
 
-Plugin oficial da Copfy com dois conjuntos de recursos:
+Plugin oficial da Copfy com três conjuntos de recursos:
 
 - **151 comandos gratuitos de imagem**, sem conta Copfy: raio X, blueprint, Meta Ads, Sell Ads, outdoor anamórfico 3D, fotografia de produto, câmera, miniaturas, diagramas e protótipos.
+- **Copywriting e cartas de vendas**: uma skill para páginas completas e outra para o método M98 da Copfy.
 - **Soluções Copfy**, que conectam sua conta e implementam sistemas de IA passo a passo.
 
 O pacote possui manifests para Claude Code e Codex. A mesma pasta `skills/` pode ser submetida como plugin para ChatGPT, Work e Codex.
@@ -43,6 +44,12 @@ Veja a [lista completa](plugins/copfy/IMAGE_COMMANDS.md) ou navegue pela [galeri
 Se a pessoa apenas anexar o produto, sem escolher um comando, a skill `image-commands` analisa formato, material, categoria e potencial visual, mostra os três efeitos mais adequados com suas imagens de exemplo e espera a escolha antes de gerar. Combinações incompatíveis — como engrenagens dentro de um calçado sem mecanismo — são descartadas pelo roteador.
 
 Todos os 151 comandos possuem descrição operacional própria e pelo menos uma imagem de exemplo pública. `/3dbillboard` e `/metaads` incluem demonstrações com tênis e lata; `/sellads` cria uma peça mais orientada à venda sem fabricar oferta ou prova. Esse catálogo pertence ao **free tier** e não pede login nem código de pareamento.
+
+## Copywriting e cartas de vendas
+
+A skill `carta-de-vendas` cria a copy, o arco de 9 dobras e a direção visual de uma landing page de conversão. A skill `copy98` aplica o método M98 da Copfy em cartas, VSLs, anúncios, headlines, e-mails e mensagens de oferta.
+
+Elas podem funcionar juntas: `copy98` constrói o argumento em 7 gatilhos e `carta-de-vendas` transforma esse argumento numa página completa. As duas preservam preço, prova, garantia e urgência reais, sem fabricar alegações comerciais.
 
 ## Soluções Copfy
 
