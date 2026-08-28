@@ -1,7 +1,7 @@
 {
   "name": "copfy",
-  "version": "0.7.0",
-  "description": "151 comandos de imagem, skills de carta de vendas e M98, além das Soluções Copfy.",
+  "version": "0.8.0",
+  "description": "151 comandos de imagem, copywriting e Soluções Copfy conectadas por MCP com OAuth.",
   "author": {
     "name": "Copfy",
     "email": "lucas@copfy.com.br",
@@ -11,20 +11,19 @@
   "repository": "https://github.com/copfybr/copfy-plugin",
   "keywords": ["copfy", "imagem", "design", "marketing", "copywriting", "vendas", "skills"],
   "skills": "./skills/",
+  "apps": "./.app.json",
   "interface": {
     "displayName": "Copfy",
-    "shortDescription": "Imagens, cartas de vendas e M98.",
-    "longDescription": "Crie e edite imagens com 151 comandos gratuitos, escreva cartas e landing pages de vendas e aplique o método M98 da Copfy. O plugin também conecta as Soluções Copfy.",
+    "shortDescription": "Imagens, copywriting e Soluções via MCP.",
+    "longDescription": "Crie e edite imagens com 151 comandos gratuitos, escreva cartas e landing pages de vendas, aplique o método M98 e implemente as Soluções Copfy pelo MCP autenticado com OAuth.",
     "developerName": "Copfy",
     "category": "Creativity",
-    "capabilities": ["Image generation", "Image editing", "Sales copywriting", "Landing pages", "Prompt workflows"],
+    "capabilities": ["Image generation", "Image editing", "Sales copywriting", "MCP tools", "OAuth"],
     "websiteURL": "https://app.copfy.com.br/solucoes",
     "defaultPrompt": [
       "Analise meu produto e mostre os 3 melhores efeitos.",
       "Aplique /xray nesta imagem.",
-      "Crie um /productshot deste produto.",
-      "Escreva uma carta de vendas para esta oferta.",
-      "Aplique o método M98 nesta copy."
+      "Liste as Soluções Copfy disponíveis."
     ],
     "brandColor": "#2563EB"
   }

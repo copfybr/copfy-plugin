@@ -6,7 +6,25 @@ Plugin oficial da Copfy com três conjuntos de recursos:
 - **Copywriting e cartas de vendas**: uma skill para páginas completas e outra para o método M98 da Copfy.
 - **Soluções Copfy**, que conectam sua conta e implementam sistemas de IA passo a passo.
 
-O pacote possui manifests para Claude Code e Codex. A mesma pasta `skills/` pode ser submetida como plugin para ChatGPT, Work e Codex.
+O pacote possui manifests para Claude Code, ChatGPT e Codex. Além das skills,
+ele conecta a integração oficial da Copfy ao MCP de Soluções, com OAuth 2.1 e
+PKCE para acessar a conta do aluno.
+
+## Instalação no ChatGPT
+
+No ChatGPT Codex, abra **Configurações → Plugins → Adicionar marketplace** e
+adicione o repositório `copfybr/copfy-plugin`. Na fonte **Pessoal**, abra
+**Copfy** e clique em **Instalar**.
+
+A instalação abre automaticamente `app.copfy.com.br`. Entre na conta do Copfy
+HUB, clique em **Permitir** e depois em **Abrir ChatGPT**. Em um chat de qualquer
+projeto, mencione `@Copfy` e peça, por exemplo, “chamar a solução
+atendimento-whatsapp”. **No ChatGPT Codex não existe código de pareamento.**
+
+O MCP expõe ferramentas para listar comandos visuais e skills, consultar as
+Soluções, obter o método e salvar ou retomar o progresso. As 151 skills visuais
+continuam gratuitas e podem ser listadas sem login; o OAuth é usado apenas nas
+ferramentas ligadas à conta.
 
 ## Instalação no Claude Code
 
@@ -53,8 +71,12 @@ Elas podem funcionar juntas: `copy98` constrói o argumento em 7 gatilhos e `car
 
 ## Soluções Copfy
 
-1. Acesse uma solução em [app.copfy.com.br/solucoes](https://app.copfy.com.br/solucoes) e gere o código de pareamento em **Implementar agora**.
-2. No Claude Code:
+No ChatGPT Codex, siga o fluxo OAuth descrito acima: instale o plugin, clique em
+**Permitir** na tela do Copfy HUB e chame `@Copfy`. Não gere código e não use o
+comando `/copfy:conectar` nesse caminho.
+
+No Claude Code, o fluxo continua usando o código exibido em **Implementar
+agora**:
 
 ```text
 /copfy:conectar COPFY-XXXXXXXX
