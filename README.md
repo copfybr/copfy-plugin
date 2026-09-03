@@ -6,25 +6,40 @@ Plugin oficial da Copfy com três conjuntos de recursos:
 - **Copywriting e cartas de vendas**: uma skill para páginas completas e outra para o método M98 da Copfy.
 - **Soluções Copfy**, que conectam sua conta e implementam sistemas de IA passo a passo.
 
-O pacote possui manifests para Claude Code, ChatGPT e Codex. Além das skills,
-ele conecta a integração oficial da Copfy ao MCP de Soluções, com OAuth 2.1 e
-PKCE para acessar a conta do aluno.
+O pacote possui manifests para Claude Code e Codex no aplicativo desktop.
+No Codex, ele conecta diretamente ao MCP de Soluções da Copfy, com OAuth 2.1
+e PKCE para acessar a conta do aluno.
 
-## Instalação no ChatGPT
+## Instalação no Codex (aplicativo desktop)
 
-No ChatGPT Codex, abra **Configurações → Plugins → Adicionar marketplace** e
-adicione o repositório `copfybr/copfy-plugin`. Na fonte **Pessoal**, abra
-**Copfy** e clique em **Instalar**.
+Use o Codex no aplicativo instalado no computador. Abra **Plugins**, adicione
+o marketplace `copfybr/copfy-plugin` e instale **Copfy**. Se já instalou uma
+versão anterior, sincronize o marketplace e reinstale o plugin para receber
+a configuração atual.
 
-A instalação abre automaticamente `app.copfy.com.br`. Entre na conta do Copfy
-HUB, clique em **Permitir** e depois em **Abrir ChatGPT**. Em um chat de qualquer
-projeto, mencione `@Copfy` e peça, por exemplo, “chamar a solução
-atendimento-whatsapp”. **No ChatGPT Codex não existe código de pareamento.**
+Depois da instalação, abra uma **nova conversa no Codex** e peça:
 
-O MCP expõe ferramentas para listar comandos visuais e skills, consultar as
-Soluções, obter o método e salvar ou retomar o progresso. As 151 skills visuais
-continuam gratuitas e podem ser listadas sem login; o OAuth é usado apenas nas
-ferramentas ligadas à conta.
+> Use o plugin Copfy para implementar a solução atendimento-whatsapp.
+
+Quando o Codex solicitar autenticação, abra o link de autorização da Copfy,
+entre em `app.copfy.com.br` com a **conta que tem acesso ao Copfy HUB** e clique
+em **Permitir**, depois em **Voltar ao Codex** para concluir. Mantenha o Codex
+aberto durante essa etapa e volte à conversa depois de concluir. A conta do
+ChatGPT pode usar outro e-mail.
+
+O login pode ser solicitado durante a instalação ou ao usar uma Solução.
+Se ele não aparecer e a Solução pedir autenticação, abra as configurações de
+**MCP** do Codex e autentique o servidor **copfy**. O login não usa código de
+pareamento nem o comando `/copfy:conectar`.
+
+O plugin deste repositório usa um servidor MCP próprio e funciona no
+**aplicativo desktop**. Esse pacote não conecta as Soluções pelo site
+`chatgpt.com` no navegador. A integração pelo navegador depende de um app
+disponível para a sua conta no diretório do ChatGPT.
+
+As 151 skills visuais e as skills de copywriting continuam disponíveis sem
+conta Copfy. As ferramentas das Soluções exigem autenticação e acesso ao HUB.
+O plugin não referencia um app de desenvolvedor de outra conta.
 
 ## Instalação no Claude Code
 
@@ -71,9 +86,9 @@ Elas podem funcionar juntas: `copy98` constrói o argumento em 7 gatilhos e `car
 
 ## Soluções Copfy
 
-No ChatGPT Codex, siga o fluxo OAuth descrito acima: instale o plugin, clique em
-**Permitir** na tela do Copfy HUB e chame `@Copfy`. Não gere código e não use o
-comando `/copfy:conectar` nesse caminho.
+No Codex desktop, siga o fluxo OAuth descrito acima e peça ao plugin Copfy
+para listar, implementar ou retomar uma solução. O plugin consulta o catálogo,
+obtém o método e salva ou lê o progresso pelas ferramentas MCP.
 
 No Claude Code, o fluxo continua usando o código exibido em **Implementar
 agora**:
