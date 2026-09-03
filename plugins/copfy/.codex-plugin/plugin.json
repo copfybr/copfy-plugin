@@ -1,6 +1,6 @@
 {
   "name": "copfy",
-  "version": "0.8.0",
+  "version": "0.8.0+codex.20260903132751",
   "description": "151 comandos de imagem, copywriting e Soluções Copfy conectadas por MCP com OAuth.",
   "author": {
     "name": "Copfy",
@@ -11,11 +11,16 @@
   "repository": "https://github.com/copfybr/copfy-plugin",
   "keywords": ["copfy", "imagem", "design", "marketing", "copywriting", "vendas", "skills"],
   "skills": "./skills/",
-  "apps": "./.app.json",
+  "mcpServers": {
+    "copfy": {
+      "type": "http",
+      "url": "https://app.copfy.com.br/mcp"
+    }
+  },
   "interface": {
     "displayName": "Copfy",
-    "shortDescription": "Imagens, copywriting e Soluções via MCP.",
-    "longDescription": "Crie e edite imagens com 151 comandos gratuitos, escreva cartas e landing pages de vendas, aplique o método M98 e implemente as Soluções Copfy pelo MCP autenticado com OAuth.",
+    "shortDescription": "Imagens, copy e Soluções no Codex desktop.",
+    "longDescription": "Crie e edite imagens com 151 comandos gratuitos, escreva cartas e landing pages de vendas e aplique o método M98. No Codex desktop, implemente as Soluções Copfy pelo MCP autenticado com OAuth.",
     "developerName": "Copfy",
     "category": "Creativity",
     "capabilities": ["Image generation", "Image editing", "Sales copywriting", "MCP tools", "OAuth"],
