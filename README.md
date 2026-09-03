@@ -23,8 +23,9 @@ Depois da instalação, abra uma **nova conversa no Codex** e peça:
 
 Quando o Codex solicitar autenticação, abra o link de autorização da Copfy,
 entre em `app.copfy.com.br` com a **conta que tem acesso ao Copfy HUB** e clique
-em **Permitir**. Mantenha o Codex aberto durante essa etapa e volte à conversa
-depois de concluir. A conta do ChatGPT pode usar outro e-mail.
+em **Permitir**, depois em **Voltar ao Codex** para concluir. Mantenha o Codex
+aberto durante essa etapa e volte à conversa depois de concluir. A conta do
+ChatGPT pode usar outro e-mail.
 
 O login pode ser solicitado durante a instalação ou ao usar uma Solução.
 Se ele não aparecer e a Solução pedir autenticação, abra as configurações de

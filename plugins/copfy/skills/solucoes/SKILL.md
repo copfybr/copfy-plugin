@@ -15,7 +15,8 @@ plugin e conectado a `https://app.copfy.com.br/mcp`.
    podem receber um prefixo do cliente; identifique `listar_solucoes`,
    `ler_estado`, `obter_metodo` e `salvar_estado`.
 2. Se o servidor solicitar login, use o fluxo de autenticação MCP do Codex.
-   O usuário entra na conta da compra em `app.copfy.com.br` e permite o acesso.
+   O usuário entra na conta da compra em `app.copfy.com.br`, clica em Permitir
+   e depois em Voltar ao Codex, mantendo o aplicativo aberto até concluir.
    A conta do ChatGPT pode ter outro e-mail.
 3. Se as ferramentas estiverem ausentes, confira se o plugin está instalado
    no Codex desktop e peça uma nova conversa após instalar ou atualizar.
